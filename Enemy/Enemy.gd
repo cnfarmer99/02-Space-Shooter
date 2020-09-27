@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 export var speed = Vector2(0,3)
 export var health = 100
-export var points = 100
+export var points = 10
 export var damage = 50
 onready var HUD = get_node("/root/Game/HUD")
 
@@ -16,7 +16,7 @@ func _physics_process(delta):
 		queue_free()
 
 func die():
-	HUD.update_score(points)
+	HUD.update_score(0)
 	#explosion
 	var explosion = Explosion.instance()
 	explosion.position = position
