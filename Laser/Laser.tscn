@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Laser/Laser.gd" type="Script" id=1]
+[ext_resource path="res://laserBlue05.png" type="Texture" id=2]
+
+[node name="Laser" type="Node2D"]
+position = Vector2( 22.7042, 23.9656 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+_speed = 300.0
+
+[node name="laser" type="Sprite" parent="."]
+texture = ExtResource( 2 )
