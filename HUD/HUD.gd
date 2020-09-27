@@ -13,6 +13,9 @@ func update_score(s):
 	if global.score >= 100 and global.level != 2:
 		get_node("/root/Game/Level").show()
 		get_node("/root/Game/Level").monitoring = true
+		
+	if global.score == 100 and global.level == 2:
+		get_tree().change_scene("res://Menu/You Win.tscn")
 
 func update_health(h):
 	global.health += h
