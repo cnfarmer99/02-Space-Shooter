@@ -18,9 +18,36 @@ func _physics_process(delta):
 
 
 func _on_Area2D_area_entered(other_area: Area2D):
+	#create collision
 	self.queue_free()
 	other_area.get_parent().queue_free()
+	
+	if other_area.get_parent().name == "Player":
+		HUD.update_health(-other_area.damage)
+	
+	#points for killing enemies
 	HUD.update_score(points)
+	
+	#explosion animation
+	var explosion = Explosion.instance()
+	explosion.position = position
+	get_node("/root/Game/Explosions").add_child(explosion)
+	explosion.get_node("Animation").play()
+	queue_free()
+
+
+func _on_Area2D_body_entered(other_area: body):
+	#create collision
+	self.queue_free()
+	other_area.get_parent().queue_free()
+	
+	if other_area.get_parent().name == "Player":
+		HUD.update_health(-other_area.damage)
+	
+	#points for killing enemies
+	HUD.update_score(points)
+	
+	#explosion animation
 	var explosion = Explosion.instance()
 	explosion.position = position
 	get_node("/root/Game/Explosions").add_child(explosion)

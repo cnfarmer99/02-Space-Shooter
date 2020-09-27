@@ -15,7 +15,8 @@ func _physics_process(delta):
 		get_parent().add_child(new_laser)
 
 
-func _on_Damage_area_entered(other_area: Area2D):
-	HUD.update_health(-Area2D.damage)
-	self.queue_free()
-	other_area.get_parent().queue_free()
+
+
+func _on_Damage_area_entered(Area2D):
+#	HUD.update_health(-Area2D.damage)
+	print("hit")

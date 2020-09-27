@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Assets/playerShip1_blue.png" type="Texture" id=2]
+[ext_resource path="res://Laser/Laser.tscn" type="PackedScene" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 7.34113, 25.1705 )
@@ -12,6 +13,7 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
 }
+_laser_scene = ExtResource( 3 )
 
 [node name="player" type="Sprite" parent="."]
 scale = Vector2( 0.675672, 0.682878 )

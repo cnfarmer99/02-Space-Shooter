@@ -13,6 +13,10 @@ script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
 }
+speed = null
+health = null
+points = null
+damage = null
 
 [node name="cow" type="Sprite" parent="."]
 position = Vector2( 0, 3 )
@@ -24,3 +28,4 @@ texture = ExtResource( 1 )
 position = Vector2( 0.89093, 3.5636 )
 shape = SubResource( 1 )
 [connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
