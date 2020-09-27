@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Player/Player.gd" type="Script" id=1]
+[ext_resource path="res://Laser/Laser.tscn" type="PackedScene" id=2]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/player.png-2dd0af52de4b213777cd8c9df94c0978.stex"
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 15.1901
+
+[node name="Player" type="KinematicBody2D"]
+position = Vector2( 522.54, 508.553 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+_laser_scene = ExtResource( 2 )
+
+[node name="player" type="Sprite" parent="."]
+scale = Vector2( 0.55, 0.55 )
+texture = SubResource( 1 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2( 0.132451, -1.05943 )
+scale = Vector2( 0.300168, 0.142141 )
+polygon = PoolVector2Array( -8.07935, -137.629, 6.8739, -137.075, 19.7284, -80.5684, 87.9359, 91.7234, 88.4607, 115.545, 86.8865, 121.639, 73.5073, 122.193, 71.671, 116.099, 39.666, 116.653, 23.6633, 152.108, -25.656, 151.554, -41.3961, 118.315, -73.1389, 117.207, -74.7129, 122.747, -87.8297, 122.747, -90.1908, 118.315, -90.1908, 92.8313, -19.6222, -83.3381 )
+
+[node name="Damage" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Damage"]
+position = Vector2( 0.235901, 4.24741 )
+shape = SubResource( 2 )
+[connection signal="body_entered" from="Damage" to="." method="_on_Damage_body_entered"]

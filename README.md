@@ -1,21 +1,31 @@
-# Godot-Project-Template
+# Exercise-02d-HUD-and-Levels
 
-This is an empty Godot project that can be used as a starting place for Godot repositories. After creating and cloning the repository, download this as a zip file. Unzip it and copy the files into the repository folder. You should then be able to import the project.godot file (in the repository folder) as a project in Godot. Make sure you change the project name in the Project Settings.
+```
+# Exercise-02d-HUD-and-Levels
+Exercise for MSCH-C220, 17 September 2020
 
-# Project Name
-2D Space Shooter 
-9-26
-
-Description
+A simple game exploring HUD elements and changing scenes.
 
 ## Implementation
-Godot
+Built using Godot 3.2.2
+
+The font, Bebas Neue Regular (Ryoichi Tsunekawa) was downloaded from [https://fontlibrary.org/en/font/bebasneueregular](https://fontlibrary.org/en/font/bebasneueregular)
+
+The looping moving starfield video was created by David Greensmith: [https://archive.org/details/LoopingMovingStarfield](https://archive.org/details/LoopingMovingStarfield)
+
+The explosion sprite sheet was downloaded from [assetsdownload.com](https://assetsdownload.com/cartoon-explosion-2d-game-sprite-free-download/)
+
+The other assets were downloaded from [kenney.nl](https://kenney.nl/assets)
+
+The background is from [opengameart.org](https://opengameart.org/content/space-background-1)
 
 ## References
-stack over flow and tutorial from pther class
+None
 
 ## Future Development
 None
 
-## Created by
-Cierra Farmer
+## Created by 
+Jason Francis
+
+```
