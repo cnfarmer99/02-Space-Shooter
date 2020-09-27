@@ -35,6 +35,9 @@ margin_right = 612.0
 margin_bottom = 360.0
 custom_fonts/font = SubResource( 2 )
 text = "Play"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Quit" type="Button" parent="."]
 margin_left = 412.0
