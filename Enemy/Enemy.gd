@@ -1,4 +1,4 @@
-extends KinematicBody2D
+extends Node2D
 
 export var speed = Vector2(0,3)
 export var health = 100
@@ -15,7 +15,11 @@ func _physics_process(delta):
 	if position.y > get_viewport().size.y + 100:
 		queue_free()
 
-func die():
+
+
+func _on_Area2D_area_entered(other_area: Area2D):
+	self.queue_free()
+	other_area.get_parent().queue_free()
 	HUD.update_score(points)
 	var explosion = Explosion.instance()
 	explosion.position = position

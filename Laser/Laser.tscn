@@ -4,7 +4,7 @@
 [ext_resource path="res://Assets/laserBlue05.png" type="Texture" id=2]
 
 [sub_resource type="CapsuleShape2D" id=1]
-radius = 4.8702
+radius = 4.6935
 height = 27.2171
 
 [node name="Laser" type="Node2D"]
@@ -22,3 +22,5 @@ texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Target"]
 shape = SubResource( 1 )
+[connection signal="area_entered" from="Target" to="." method="_on_Target_area_entered"]
+[connection signal="body_entered" from="Target" to="." method="_on_Target_body_entered"]

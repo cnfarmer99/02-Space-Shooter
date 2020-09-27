@@ -1,4 +1,4 @@
-extends KinematicBody2D
+extends Node2D
 
 onready var HUD = get_node("/root/Game/HUD")
 export var _laser_scene: PackedScene
@@ -14,7 +14,8 @@ func _physics_process(delta):
 		new_laser.position = position 
 		get_parent().add_child(new_laser)
 
-#damage
-func _on_Damage_body_entered(body):
-	HUD.update_health(-body.damage)
-	body.die()
+
+func _on_Damage_area_entered(other_area: Area2D):
+	HUD.update_health(-Area2D.damage)
+	self.queue_free()
+	other_area.get_parent().queue_free()
