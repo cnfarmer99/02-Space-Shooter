@@ -10,11 +10,15 @@ func _ready():
 func update_score(s):
 	global.score += s
 	$Score.text = "Score: " + str(global.score)
-	if global.score >= 100 and global.level != 2:
+	if global.score >= 100 and global.level != 2 and global.level != 3:
 		get_node("/root/Game/Level").show()
 		get_node("/root/Game/Level").monitoring = true
 		
-	if global.score == 100 and global.level == 2:
+	elif global.score >= 100 and global.level != 1 and global.level != 3:
+		get_node("/root/Game/Level").show()
+		get_node("/root/Game/Level").monitoring = true
+		
+	elif global.score == 300 and global.level == 3:
 		get_tree().change_scene("res://Menu/You Win.tscn")
 
 func update_health(h):

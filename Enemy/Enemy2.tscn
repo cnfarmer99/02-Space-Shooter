@@ -6,11 +6,10 @@
 [sub_resource type="CircleShape2D" id=1]
 radius = 73.3576
 
-[node name="Enemy" type="KinematicBody2D"]
-position = Vector2( 0, -49.7194 )
+[node name="Narwhal" type="KinematicBody2D"]
+position = Vector2( 892.681, -53.283 )
 scale = Vector2( 0.25, 0.25 )
 collision_layer = 2
-collision_mask = 2
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true

@@ -15,6 +15,6 @@ func _physics_process(delta):
 		self.get_parent().add_child(new_laser)
 
 func _on_Damage_body_entered(body):
-	HUD.update_health(-body.damage)
+	#HUD.update_health(-body.damage)
 	body.die()
 	HUD.update_score(0)

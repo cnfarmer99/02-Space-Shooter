@@ -26,7 +26,6 @@ func die():
 	
 # other_area is obj involved in collision, Area2D is self.area
 func _on_Area2D_area_entered(other_area: Area2D):
-	# destroys
 	self.queue_free() # queue_free destroys obj
 	other_area.get_parent().queue_free()
 	HUD.update_score(points)

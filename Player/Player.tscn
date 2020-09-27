@@ -11,7 +11,8 @@ load_path = "res://.import/player.png-2dd0af52de4b213777cd8c9df94c0978.stex"
 radius = 15.1901
 
 [node name="Player" type="KinematicBody2D"]
-position = Vector2( 522.54, 508.553 )
+input_pickable = true
+collision_mask = 2147483657
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
