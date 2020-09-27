@@ -20,12 +20,14 @@ The other assets were downloaded from [kenney.nl](https://kenney.nl/assets)
 The background is from [opengameart.org](https://opengameart.org/content/space-background-1)
 
 ## References
-None
+Used google for various runtime errors
+
+Used tutorial from C292 for laser implementation and movement (https://www.youtube.com/watch?v=Afizwr9pEnw&feature=youtu.be)
 
 ## Future Development
 None
 
 ## Created by 
-Jason Francis
+Cierra Farmer
 
 ```
