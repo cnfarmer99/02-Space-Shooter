@@ -15,7 +15,8 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Project Template"
+config/name="2D Space Shooter"
+run/main_scene="res://Menu/Menu.tscn"
 config/icon="res://icon.png"
 
 [rendering]

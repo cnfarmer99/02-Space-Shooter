@@ -21,3 +21,7 @@ func _physics_process(delta):
 #
 #func _on_Target_body_entered(body):
 #	body.die()
+
+
+func _on_Target_body_entered(body):
+	body.die()
