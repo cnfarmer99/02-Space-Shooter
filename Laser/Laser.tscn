@@ -7,7 +7,7 @@
 radius = 4.63258
 height = 27.4847
 
-[node name="Laser" type="Node2D"]
+[node name="Laser" type="KinematicBody2D"]
 position = Vector2( -74.2719, 58.1084 )
 script = ExtResource( 1 )
 __meta__ = {
@@ -23,3 +23,6 @@ texture = ExtResource( 2 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Target"]
 position = Vector2( -0.0114365, 0.0214958 )
 shape = SubResource( 1 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( -4.63628, -14.3132, -4.57007, 14.1599, -4.10655, 15.9478, -2.58357, 17.4045, -1.59032, 18.2653, -0.39843, 18.5964, 1.38942, 18.2653, 2.84618, 17.2059, 4.03807, 15.3518, 4.50159, 13.6302, 4.43537, -14.7104, 3.44212, -16.6969, 2.44888, -17.4915, 0.594818, -18.2861, -2.05384, -17.8226, -3.97412, -16.2996 )

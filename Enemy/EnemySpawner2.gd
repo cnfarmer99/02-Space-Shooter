@@ -11,4 +11,3 @@ func _on_Timer_timeout():
 		enemy.position.x = randi() % int(width)
 		enemy.speed = Vector2(0, (randi() % 5)+1)
 		add_child(enemy)
-		print("enemy")

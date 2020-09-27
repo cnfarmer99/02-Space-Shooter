@@ -15,7 +15,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="HUD and Levels"
+config/name="2D Animal Space Shooter"
 run/main_scene="res://Menu/Menu.tscn"
 config/icon="res://icon.png"
 
