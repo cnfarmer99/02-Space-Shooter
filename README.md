@@ -1,12 +1,11 @@
-# Exercise-02d-HUD-and-Levels
+# 2D Space Shooter
+Exercise for MSCH-C220; 30 September 2020
 
-```
-# Exercise-02d-HUD-and-Levels
-Exercise for MSCH-C220, 17 September 2020
-
-A simple game exploring HUD elements and changing scenes.
+A simple 2D space shooter.  Contains a main menu with instruction button, game over menu, and you win menu.  
 
 Score resets between each level to allow the player to score as many points as they'd like before moving on to the next level.
+
+Did have an error in Level 2 where the portal can still be collided with, layers wouldn't work on my laptop. Caused game to crash if changed. 
 
 ## Implementation
 Built using Godot 3.2.2
