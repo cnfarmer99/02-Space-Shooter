@@ -6,6 +6,8 @@ Exercise for MSCH-C220, 17 September 2020
 
 A simple game exploring HUD elements and changing scenes.
 
+Score resets between each level to allow the player to score as many points as they'd like before moving on to the next level.
+
 ## Implementation
 Built using Godot 3.2.2
 
