@@ -5,7 +5,6 @@
 
 [sub_resource type="StreamTexture" id=1]
 flags = 4
-load_path = "res://.import/player.png-2dd0af52de4b213777cd8c9df94c0978.stex"
 
 [sub_resource type="CircleShape2D" id=2]
 radius = 15.1901

@@ -51,5 +51,6 @@ shoot={
 
 [rendering]
 
+quality/driver/driver_name="GLES2"
 quality/reflections/high_quality_ggx=false
 environment/default_environment="res://default_env.tres"
