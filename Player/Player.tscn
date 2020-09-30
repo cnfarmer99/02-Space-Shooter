@@ -10,6 +10,7 @@ flags = 4
 radius = 15.1901
 
 [node name="Player" type="KinematicBody2D"]
+z_index = 10
 input_pickable = true
 collision_mask = 2147483657
 script = ExtResource( 1 )
