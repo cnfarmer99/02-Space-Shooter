@@ -2,11 +2,9 @@
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Laser/Laser.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/player.png" type="Texture" id=3]
 
-[sub_resource type="StreamTexture" id=1]
-flags = 4
-
-[sub_resource type="CircleShape2D" id=2]
+[sub_resource type="CircleShape2D" id=1]
 radius = 15.1901
 
 [node name="Player" type="KinematicBody2D"]
@@ -20,7 +18,7 @@ _laser_scene = ExtResource( 2 )
 
 [node name="player" type="Sprite" parent="."]
 scale = Vector2( 0.55, 0.55 )
-texture = SubResource( 1 )
+texture = ExtResource( 3 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 position = Vector2( 0.132451, -1.05943 )
@@ -33,5 +31,5 @@ collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Damage"]
 position = Vector2( 0.235901, 4.24741 )
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 [connection signal="body_entered" from="Damage" to="." method="_on_Damage_body_entered"]
